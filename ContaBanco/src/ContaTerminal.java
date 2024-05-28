@@ -14,8 +14,8 @@ public class ContaTerminal {
         // Declarando variáveis
         int conta = 1021;
         String agencia = "067-8";
-        String nomeCliente = "MARIO ANDRADE";
-        Double saldo = 237.48;
+        String nomeCliente = "João Vinícius";
+        Double saldo = 354.78;
 
         // Criando um objeto do tipo Scanner para receber os dados do teclado
         Scanner scanner = new Scanner(System.in);
@@ -27,8 +27,11 @@ public class ContaTerminal {
         System.out.print("Digite o numero da conta: ");
         int numeroConta = scanner.nextInt();
 
+        scanner.close();
+
         // Chamando método de validação dos dados recebidos e retornando ao cliente
         validarDados(numeroAgencia, agencia, numeroConta, conta, nomeCliente, saldo);
+
     }
 
     /**
